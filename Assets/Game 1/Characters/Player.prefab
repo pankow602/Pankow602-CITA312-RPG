@@ -85,10 +85,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3275237133888275478, guid: 4d042c0d0b65b8d41b74b25d241c5a31,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8249102232957772596, guid: 4d042c0d0b65b8d41b74b25d241c5a31,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.07842255
       objectReference: {fileID: 0}
     - target: {fileID: 8249102232957772596, guid: 4d042c0d0b65b8d41b74b25d241c5a31,
         type: 3}
@@ -98,7 +103,7 @@ PrefabInstance:
     - target: {fileID: 8249102232957772596, guid: 4d042c0d0b65b8d41b74b25d241c5a31,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1.4571419
       objectReference: {fileID: 0}
     - target: {fileID: 8249102232957772596, guid: 4d042c0d0b65b8d41b74b25d241c5a31,
         type: 3}
@@ -139,6 +144,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1248732435942259798, guid: 4d042c0d0b65b8d41b74b25d241c5a31,
+        type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d042c0d0b65b8d41b74b25d241c5a31, type: 3}

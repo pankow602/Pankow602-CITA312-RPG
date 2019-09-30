@@ -2579,6 +2579,7 @@ GameObject:
   - component: {fileID: 472974673}
   - component: {fileID: 472974672}
   - component: {fileID: 472974671}
+  - component: {fileID: 472974677}
   - component: {fileID: 472974676}
   - component: {fileID: 472974675}
   - component: {fileID: 472974674}
@@ -2718,6 +2719,18 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &472974677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472974669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9942a94d93766184485f23f94d265ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &475475599 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 452602, guid: 8b17dbd29b0c2474d958f6a2aa5d3aa2,
@@ -10851,7 +10864,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1501422360}
-  m_LocalRotation: {x: -0.007912253, y: 0.98608786, z: -0.049200352, w: -0.15857972}
+  m_LocalRotation: {x: -0.007912254, y: 0.98608786, z: -0.049200356, w: -0.1585797}
   m_LocalPosition: {x: -88.65539, y: 16.569109, z: -34.24946}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

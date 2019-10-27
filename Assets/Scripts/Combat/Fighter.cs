@@ -17,6 +17,11 @@ namespace RPG.Combat
 
         public float WeaponRange { get => weaponRange; set => weaponRange = value; }
 
+        private void Start()
+        {
+            SpawnWeapon();
+        }
+
         private void Update()
         {
             timeSinceLastAttack += Time.deltaTime;
@@ -33,6 +38,11 @@ namespace RPG.Combat
                 GetComponent<Mover>().Cancel();
                 AttackBehaviour();
             }
+        }
+
+        private void SpawnWeapon()
+        {
+            Instantiate(weaponPrefab, handTransform);
         }
 
         private void AttackBehaviour()

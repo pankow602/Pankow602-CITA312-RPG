@@ -16,8 +16,14 @@ namespace RPG.Combat
             if (equippedPrefab != null)
             {
                 Transform handTransform;
-                if (isRightHanded) handTransform = rightHand;
-                else handTransform = leftHand;
+                if (isRightHanded)
+                {
+                    handTransform = rightHand;
+                }
+                else
+                {
+                    handTransform = leftHand;
+                }
                 Instantiate(equippedPrefab, handTransform);
             }
             if(animatorOverride != null)

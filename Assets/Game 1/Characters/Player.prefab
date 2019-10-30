@@ -13,7 +13,7 @@ CapsuleCollider:
   m_Radius: 0.33
   m_Height: 2.19
   m_Direction: 1
-  m_Center: {x: 0, y: 0.75, z: 0}
+  m_Center: {x: 0, y: 0.98, z: 0}
 --- !u!114 &-1961640302468581174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,6 +212,12 @@ PrefabInstance:
       propertyPath: rightHandTransform
       value: 
       objectReference: {fileID: 1586355869540872636}
+    - target: {fileID: 1248732435942259798, guid: 4d042c0d0b65b8d41b74b25d241c5a31,
+        type: 3}
+      propertyPath: defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 13d36f8b5e04cd94388707af2c236311,
+        type: 2}
     - target: {fileID: 1641670985, guid: 4d042c0d0b65b8d41b74b25d241c5a31, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -225,6 +231,26 @@ PrefabInstance:
         type: 3}
       propertyPath: uniqueIdentifier
       value: player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663020557008808050, guid: 4d042c0d0b65b8d41b74b25d241c5a31,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663020557008808050, guid: 4d042c0d0b65b8d41b74b25d241c5a31,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663020557008808050, guid: 4d042c0d0b65b8d41b74b25d241c5a31,
+        type: 3}
+      propertyPath: m_Mass
+      value: 0.0000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663020557008808050, guid: 4d042c0d0b65b8d41b74b25d241c5a31,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d042c0d0b65b8d41b74b25d241c5a31, type: 3}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6939912427122967936}
   - component: {fileID: 6380272413463908176}
   m_Layer: 0
-  m_Name: ArrowProjectile
+  m_Name: RootArrowProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   m_LocalPosition: {x: 31.025797, y: 8.771603, z: -6.851915}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 442738240186016644}
+  - {fileID: 7706924559978314229}
   - {fileID: 286304453767419353}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 22
+  isHoming: 1
 --- !u!65 &6380272413463908176
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -205,7 +206,7 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!1001 &446996200173796144
+--- !u!1001 &7702456860128289089
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -262,9 +263,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7f49c6920d49ba468b083941d79f2c0, type: 3}
---- !u!4 &442738240186016644 stripped
+--- !u!4 &7706924559978314229 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4750687242688692, guid: c7f49c6920d49ba468b083941d79f2c0,
     type: 3}
-  m_PrefabInstance: {fileID: 446996200173796144}
+  m_PrefabInstance: {fileID: 7702456860128289089}
   m_PrefabAsset: {fileID: 0}

@@ -17,7 +17,7 @@ public class Projectile : MonoBehaviour
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 
-    public void setTarget(Health target)
+    public void SetTarget(Health target)
     {
         this.target = target;
     }

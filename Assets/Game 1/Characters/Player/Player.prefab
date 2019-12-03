@@ -227,11 +227,6 @@ PrefabInstance:
       propertyPath: healthPoints
       value: 140
       objectReference: {fileID: 0}
-    - target: {fileID: 7237961990501852891, guid: 4d042c0d0b65b8d41b74b25d241c5a31,
-        type: 3}
-      propertyPath: uniqueIdentifier
-      value: player
-      objectReference: {fileID: 0}
     - target: {fileID: 8663020557008808050, guid: 4d042c0d0b65b8d41b74b25d241c5a31,
         type: 3}
       propertyPath: m_UseGravity
@@ -251,6 +246,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsKinematic
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7237961990501852891, guid: 4d042c0d0b65b8d41b74b25d241c5a31,
+        type: 3}
+      propertyPath: uniqueIdentifier
+      value: player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1383926483396236148, guid: 4d042c0d0b65b8d41b74b25d241c5a31,
+        type: 3}
+      propertyPath: characterClass
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d042c0d0b65b8d41b74b25d241c5a31, type: 3}

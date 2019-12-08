@@ -1,7 +1,10 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using RPG.Saving;
 using RPG.Stats;
 using RPG.Core;
+using UnityEngine.SceneManagement;
+using RPG.SceneManagement;
 
 namespace RPG.Resources
 {
@@ -37,6 +40,23 @@ namespace RPG.Resources
             isDead = true;
             GetComponent<Animator>().SetTrigger("die");
             GetComponent<ActionScheduler>().CancelCurrentAction();
+            if (gameObject.tag == "Player")
+            {
+                StartCoroutine(Transition());
+            }
+        }
+
+        private IEnumerator Transition()
+        {
+            Fader fader = FindObjectOfType<Fader>();
+
+            yield return fader.FadeOut(2);
+
+            yield return new WaitForSeconds(1);
+
+            SceneManager.LoadScene(0);
+
+            yield return fader.FadeIn(3);
         }
 
         public object CaptureState()

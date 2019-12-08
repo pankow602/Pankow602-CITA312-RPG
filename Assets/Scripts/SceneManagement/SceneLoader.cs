@@ -3,11 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneLoader : MonoBehaviour
-{
+public class SceneLoader : MonoBehaviour {
+
     public void LoadNextScene()
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex + 1);
+        // we want to determine our present scene by determining  the index
+        int intCurrentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        // load the next scene
+        SceneManager.LoadScene(intCurrentSceneIndex + 1);
+    } // LoadNextScene
+
+    public void LoadStartScene()
+    {
+        // load the start scene
+        SceneManager.LoadScene(0);
     }
-}
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+} // class SceneLoader

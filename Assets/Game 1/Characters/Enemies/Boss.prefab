@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 4476452042969140753, guid: e6437d000026b204386454d0c60759b9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Boss
+      objectReference: {fileID: 0}
     - target: {fileID: 6995996216207042867, guid: e6437d000026b204386454d0c60759b9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -86,12 +91,17 @@ PrefabInstance:
     - target: {fileID: 4019696140875533722, guid: e6437d000026b204386454d0c60759b9,
         type: 3}
       propertyPath: healthPoints
-      value: 50
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 1399625216672588623, guid: e6437d000026b204386454d0c60759b9,
         type: 3}
       propertyPath: maxSpeed
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 3103416143746895125, guid: e6437d000026b204386454d0c60759b9,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 01b2546c969fe814794af634cb4534f4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6437d000026b204386454d0c60759b9, type: 3}

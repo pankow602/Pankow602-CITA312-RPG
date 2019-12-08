@@ -44,6 +44,13 @@ namespace RPG.Resources
             {
                 StartCoroutine(Transition());
             }
+            else
+            {
+                if(gameObject.tag == "Boss")
+                {
+                    StartCoroutine(EndTransition());
+                }
+            }
         }
 
         private IEnumerator Transition()
@@ -55,6 +62,19 @@ namespace RPG.Resources
             yield return new WaitForSeconds(1);
 
             SceneManager.LoadScene(0);
+
+            yield return fader.FadeIn(3);
+        }
+
+        private IEnumerator EndTransition()
+        {
+            Fader fader = FindObjectOfType<Fader>();
+
+            yield return fader.FadeOut(2);
+
+            yield return new WaitForSeconds(1);
+
+            SceneManager.LoadScene(2);
 
             yield return fader.FadeIn(3);
         }

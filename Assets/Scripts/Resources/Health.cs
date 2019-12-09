@@ -3,6 +3,7 @@ using UnityEngine;
 using RPG.Saving;
 using RPG.Stats;
 using RPG.Core;
+//pulls info from different classes to run transitions
 using UnityEngine.SceneManagement;
 using RPG.SceneManagement;
 
@@ -40,10 +41,12 @@ namespace RPG.Resources
             isDead = true;
             GetComponent<Animator>().SetTrigger("die");
             GetComponent<ActionScheduler>().CancelCurrentAction();
+            //checks if object is "player"
             if (gameObject.tag == "Player")
             {
                 StartCoroutine(Transition());
             }
+            //Checks if Object is "Boss"
             else
             {
                 if(gameObject.tag == "Boss")
@@ -53,6 +56,7 @@ namespace RPG.Resources
             }
         }
 
+        //if Player dies, runs this transistion to first screen
         private IEnumerator Transition()
         {
             Fader fader = FindObjectOfType<Fader>();
@@ -66,6 +70,7 @@ namespace RPG.Resources
             yield return fader.FadeIn(3);
         }
 
+        //if boss dies, runs this transition to end screen
         private IEnumerator EndTransition()
         {
             Fader fader = FindObjectOfType<Fader>();
